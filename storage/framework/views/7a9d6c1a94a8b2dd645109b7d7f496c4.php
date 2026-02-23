@@ -1,0 +1,122 @@
+<?php $__env->startSection('title'); ?>
+    Pengaduan Layanan Masyarakat
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('title-navbar'); ?>
+    Pengaduan Layanan Masyarakat
+<?php $__env->stopSection(); ?>
+<?php $__env->startSection('content'); ?>
+    <div class="container-fluid wow fadeInUp" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
+                <h5 class="fw-bold text-primary text-uppercase">Pengaduan Layanan Masyarakat</h5>
+                <h1 class="mb-0">Balai Kekarantinaan Kesehatan Kelas I Pontianak</h1>
+            </div>
+
+            <div class="row">
+                <!-- Misi Card -->
+                <div class="col-lg-6 mb-4">
+                    <img class="d-block mx-auto mb-3" style="width: 40%;"
+                        src="<?php echo e(asset('frontend/img/customer-service.png')); ?>">
+                    <h5 class="card-title text-center">Prosedur Pengaduan Masyarakat Balai Kekarantinaan Kesehatan
+                        Kelas I Pontianak</h5>
+                    <ol>
+                        <li>Pengaduan dapat diajukan oleh Masyarakat secara Perorangan atau Kelompok Masyarakat.
+                        </li>
+
+                        <li>Setiap Pelapor wajib mengisikan Registrasi Pengaduan yang disediakan melalui Portal
+                            Website
+                            Balai Kekarantinaan Kesehatan Kelas I Pontianak atau dapat langsung mengunjungi Balai
+                            Kekarantinaan Kesehatan Kelas I Pontianak.</li>
+
+                        <li>Setiap pengaduan yang telah diregistrasikan akan diterima oleh Unit Pelayanan untuk
+                            diverifikasi sesuai dengan substansi pada unit kerja di lingkup Balai Kekarantinaan
+                            Kesehatan Kelas I Pontianak.</li>
+
+                        <li>Laporan atas pengaduan tersebut akan ditindak lanjuti secara langsung oleh Unit Kerja
+                            Balai
+                            Kekarantinaan Kesehatan Kelas I Pontianak terkait dengan substansi permasalahan yang
+                            diadukan tersebut.</li>
+
+                        <li>Laporan pengaduan yang diajukan akan ditindak lanjuti dalam jangka waktu penyelesaian
+                            selama
+                            30 hari kerja dengan memperhatikan kembali kelengkapan berkas yang ada.</li>
+
+                        <li>Setiap laporan pengaduan tidak dikenakan biaya.</li>
+                    </ol>
+                </div>
+
+                <!-- Tujuan Strategis Card -->
+                <div class="col-lg-6 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body">
+                            <h3 class="card-title text-center mt-3 mb-3">Form Layanan Pengaduan Masyarakat</h3>
+                            <p>Pengaduan Anda akan menyempurnakan pelayanan kami.
+                                Jika ada pertanyaan anda bisa menghubungi kami pada Form Kontak Kami.</p>
+                            <form action="<?php echo e(route('layanan-pengaduan-masyarakat.store')); ?>" method="POST"
+                                enctype="multipart/form-data">
+                                <?php echo csrf_field(); ?>
+                                <div class="mb-3">
+                                    <label class="form-label">Nama / Inisial</label>
+                                    <input type="text" name="nama" class="form-control"
+                                        placeholder="Masukkan nama / inisial" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Jenis Kelamin</label><br>
+                                    <label>
+                                        <input type="radio" name="jenis_kelamin" value="Laki-laki" required>
+                                        Laki-laki
+                                    </label>
+                                    <label style="margin-left: 20px;">
+                                        <input type="radio" name="jenis_kelamin" value="Perempuan" required>
+                                        Perempuan
+                                    </label>
+                                </div>
+                                <div class="form-group mt-3">
+                                    <label class="form-label" for="umur">Umur</label>
+                                    <input type="number" name="umur" id="umur" class="form-control" min="1"
+                                        max="120" placeholder="Masukkan umur" required>
+                                </div>
+                                <div class="form-group mb-3 mt-3">
+                                    <label class="form-label" for="permasalahan">Permasalahan / Pengaduan</label>
+                                    <textarea name="permasalahan" class="form-control" rows="8" placeholder="Masukkan permasalahan / pengaduan"></textarea>
+                                </div>
+                                <div class="g-recaptcha mb-3" data-sitekey="<?php echo e(env('RECAPTCHA_SITE_KEY')); ?>"></div>
+                                <button type="submit" class="btn btn-primary">Simpan</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <?php if(session('success')): ?>
+        <script>
+            Swal.fire({
+                title: "Berhasil!",
+                text: "<?php echo e(session('success')); ?>",
+                icon: "success",
+                confirmButtonColor: "#3085d6",
+                confirmButtonText: "OK"
+            });
+        </script>
+    <?php endif; ?>
+
+    <?php if(session('error')): ?>
+        <script>
+            Swal.fire({
+                title: "Gagal!",
+                text: "<?php echo e(session('error')); ?>",
+                icon: "error",
+                confirmButtonColor: "#d33",
+                confirmButtonText: "OK"
+            });
+        </script>
+    <?php endif; ?>
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.detail', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH D:\OneDrive - MSFT\02. Pekerjaan\11. Kemenkes BKK Kelas I Pontianak\bkkpontianak\resources\views/pages/frontend/layanan/pengaduan-layanan-masyarakat.blade.php ENDPATH**/ ?>

@@ -1,0 +1,2 @@
+<img style="max-width: 100%" src="<?php echo e(asset('frontend/img/waktu-layanan-informasi1.png')); ?>" alt="">
+<?php /**PATH D:\OneDrive - MSFT\02. Pekerjaan\11. Kemenkes BKK Kelas I Pontianak\bkkpontianak\resources\views/components/ppid/standar-layanan/waktu-layanan-informasi.blade.php ENDPATH**/ ?>
