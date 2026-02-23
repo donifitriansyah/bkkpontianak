@@ -21,6 +21,7 @@ use App\Http\Controllers\Admin\PPIDFormController;
 use App\Http\Controllers\Admin\PPIDProfilController;
 use App\Http\Controllers\Admin\PPIDStrukturOrganisasiController;
 use App\Http\Controllers\Admin\PPIDTugasFungsiController;
+use App\Http\Controllers\Admin\PPIDVisiMisiController;
 use App\Http\Controllers\Admin\ProfilSKIController;
 use App\Http\Controllers\Admin\SejarahDanLatarBelakangController;
 use App\Http\Controllers\Admin\SKDanSOPController;
@@ -52,6 +53,7 @@ use App\Models\PPIDForm;
 use App\Models\PPIDProfil;
 use App\Models\PPIDStrukturOrganisasi;
 use App\Models\PPIDTugasFungsi;
+use App\Models\PPIDVisiMisi;
 use App\Models\SejarahDanLatarBelakang;
 use App\Models\SKDanSOP;
 use App\Models\Sosmed;
@@ -309,7 +311,10 @@ Route::get('/informasi-publik/ppid/struktur-organisasi', function () {
 })->name('ppid.struktur-organisasi');
 
 Route::get('/informasi-publik/ppid/visi-misi', function () {
-    return view('components.ppid.visi-misi');
+
+    $data = PPIDVisiMisi::latest()->first();
+    return view('components.ppid.visi-misi', compact('data'));
+
 })->name('ppid.visi-misi');
 
 Route::get('/informasi-publik/ppid/regulasi', function () {
@@ -458,6 +463,8 @@ Route::middleware('auth')->group(function () {
     Route::resource('admin-ppid-tugas-fungsi', PPIDTugasFungsiController::class);
 
     Route::resource('admin-ppid-struktur-organisasi', PPIDStrukturOrganisasiController::class);
+
+    Route::resource('admin-ppid-visi-misi', PPIDVisiMisiController::class);
 
     Route::post('admin-dashboard-interaktif/upload-image',[BedesutDashboardController::class, 'uploadImage'])->name('dashboard-interaktif.upload-image');
 

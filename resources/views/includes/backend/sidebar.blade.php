@@ -197,7 +197,7 @@
                         </li>
 
                         <li class="submenu-item">
-                            <a href="extra-component-rating.html" class="submenu-link">Rating</a>
+                            <a href="{{ route('admin-ppid-visi-misi.index') }}" class="submenu-link">Visi Misi</a>
                         </li>
                     </ul>
                 </li>
