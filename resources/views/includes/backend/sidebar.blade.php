@@ -193,7 +193,7 @@
                         </li>
 
                         <li class="submenu-item">
-                            <a href="{{ route('admin-ppid-struktur-organisasi.index') }}" class="submenu-link">struktur Organisasi</a>
+                            <a href="{{ route('admin-ppid-struktur-organisasi.index') }}" class="submenu-link">Struktur Organisasi</a>
                         </li>
 
                         <li class="submenu-item">
