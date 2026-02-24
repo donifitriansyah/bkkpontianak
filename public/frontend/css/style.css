@@ -68,49 +68,6 @@
 }
 
 
-/* Default Desktop */
-.logo-navbar {
-    height: 50px;
-    margin-right: 10px;
-}
-
-.navbar-title {
-    font-size: 22px;
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-    .logo-navbar {
-        height: 40px;
-    }
-
-    .navbar-title {
-        font-size: 18px;
-    }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-    .logo-navbar {
-        height: 32px;
-    }
-
-    .navbar-title {
-        font-size: 15px;
-    }
-}
-
-/* Extra small mobile */
-@media (max-width: 480px) {
-    .logo-navbar {
-        height: 28px;
-    }
-
-    .navbar-title {
-        font-size: 13px;
-    }
-}
-
 /* Custom Styles for Social Media Cards */
 /* Custom Styles for Social Media Cards */
 
@@ -1441,4 +1398,28 @@ h6,
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Default (Desktop) */
+.navbar-logo {
+    height: 50px !important;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    font-size: 22px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar-logo {
+        height: 30px !important;
+    }
+
+    .navbar-title {
+        font-size: 15px;
+    }
+
 }
