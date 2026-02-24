@@ -2,8 +2,8 @@
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center p-0 ">
             <img src="{{ asset('frontend/img/logokarantina.png') }}" alt="Logo BKK"
-                style="height: 50px; margin-right: 10px">
-            <h3 class="m-0">BKK Kelas I Pontianak</h3>
+                class="logo-navbar">
+            <h3 class="m-0 navbar-title">BKK Kelas I Pontianak</h3>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="fa fa-bars"></span>

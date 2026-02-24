@@ -31,7 +31,7 @@
     text-align: center;
     transition: 0.3s;
     cursor: pointer;
-    height: 150px;
+    height: 100px;
 }
 
 /* Active State */
@@ -67,6 +67,29 @@
     color: black;
 }
 
+/* Default Desktop */
+.logo-navbar {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    font-size: 22px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .logo-navbar {
+        height: 30px;
+    }
+
+    .navbar-title {
+        font-size: 18px;
+    }
+
+}
+
 /* Responsif */
 @media (max-width: 992px) {
     .grid-6 {
@@ -78,6 +101,7 @@
     .grid-6 {
         grid-template-columns: repeat(2, 1fr);
     }
+
 }
 
 /* Custom Styles for Social Media Cards */
@@ -95,7 +119,9 @@
     align-items: center;
     text-align: center;
     height: 150px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* For smooth hover effect */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* For smooth hover effect */
 }
 
 .center-list {
@@ -114,7 +140,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* For smooth hover effect */
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease; /* For smooth hover effect */
 }
 
 /* Instagram Card Styling */
@@ -233,8 +261,6 @@ i {
     }
 }
 
-
-
 .news-box {
     text-align: left;
 }
@@ -281,7 +307,6 @@ i {
     position: relative;
 }
 
-
 /* Card body tinggi stabil */
 .berita-body {
     min-height: 360px;
@@ -327,7 +352,6 @@ i {
     object-fit: cover;
 }
 
-
 /* KHUSUS BERITA */
 #beritaCarousel .carousel-item {
     height: auto;
@@ -340,7 +364,6 @@ i {
 #beritaCarousel .card-body {
     padding: 1rem;
 }
-
 
 /* Tombol prev / next custom */
 .berita-prev,
@@ -373,8 +396,6 @@ i {
 .berita-next:hover {
     background: #0d6efd;
 }
-
-
 
 /* Carousel controls */
 .carousel-control-prev,
@@ -547,12 +568,16 @@ i {
 #spinner {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.5s ease-out, visibility 0s linear 0.5s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0.5s;
     z-index: 99999;
 }
 
 #spinner.show {
-    transition: opacity 0.5s ease-out, visibility 0s linear 0s;
+    transition:
+        opacity 0.5s ease-out,
+        visibility 0s linear 0s;
     visibility: visible;
     opacity: 1;
 }
@@ -1290,7 +1315,8 @@ h6,
 }
 
 .bg-header {
-    background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)),
+    background:
+        linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)),
         url(../img/carousel-1.jpg) center center no-repeat;
     background-size: cover;
 }
