@@ -3733,19 +3733,6 @@ fieldset:disabled .btn {
     font-size: 22px;
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-
-    .logo-navbar {
-        height: 35px;
-    }
-
-    .navbar-title {
-        font-size: 10px;
-    }
-
-}
-
 .navbar-toggler:hover {
     text-decoration: none;
 }
