@@ -68,19 +68,47 @@
 }
 
 
+/* Default Desktop */
+.logo-navbar {
+    height: 50px;
+    margin-right: 10px;
+}
 
-/* Responsif */
+.navbar-title {
+    font-size: 22px;
+}
+
+/* Tablet */
 @media (max-width: 992px) {
-    .grid-6 {
-        grid-template-columns: repeat(3, 1fr);
+    .logo-navbar {
+        height: 40px;
+    }
+
+    .navbar-title {
+        font-size: 18px;
     }
 }
 
-@media (max-width: 576px) {
-    .grid-6 {
-        grid-template-columns: repeat(2, 1fr);
+/* Mobile */
+@media (max-width: 768px) {
+    .logo-navbar {
+        height: 32px;
     }
 
+    .navbar-title {
+        font-size: 15px;
+    }
+}
+
+/* Extra small mobile */
+@media (max-width: 480px) {
+    .logo-navbar {
+        height: 28px;
+    }
+
+    .navbar-title {
+        font-size: 13px;
+    }
 }
 
 /* Custom Styles for Social Media Cards */
