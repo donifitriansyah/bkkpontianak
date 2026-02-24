@@ -62,7 +62,7 @@
                         <div>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.615126851328!2d109.39814519357907!3d-0.1330469999999918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e1d50235e926d8f%3A0xb360d28cf24e43ac!2sBalai%20Kekarantinaan%20Kesehatan%20Kelas%20I%20Pontianak!5e0!3m2!1sid!2sid!4v1764179846444!5m2!1sid!2sid"
-                                width="500" style="border:0;" allowfullscreen="" loading="lazy"
+                                style="border:0;" allowfullscreen="" loading="lazy"
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                             {{-- <iframe src="https://www.google.com/maps/d/embed?mid=118NmmtW-hcRa1YNvFqeVD7zeqXvPmQKx"
                                 width="550"  height="200" style="border:0;" allowfullscreen=""
