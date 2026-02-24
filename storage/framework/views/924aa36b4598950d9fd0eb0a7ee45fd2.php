@@ -42,25 +42,25 @@
 
     <!-- Ikon Media Sosial yang akan terbang dari sebelah kanan -->
     <div class="social-media-icons">
-        <a href="<?php echo e($sosmed->ig); ?>" target="_blank"
+        <a href="<?php echo e($sosmed->fb); ?>" target="_blank"
             class="social-icon facebook btn-lg-square">
             <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="https://x.com/kkp_pontianak" target="_blank" class="social-icon twitter btn-lg-square">
+        <a href="<?php echo e($sosmed->twitter); ?>" target="_blank" class="social-icon twitter btn-lg-square">
             <i class="fab fa-twitter"></i>
         </a>
-        <a href="https://www.instagram.com/bkk.pontianak/" target="_blank" class="social-icon instagram btn-lg-square">
+        <a href="<?php echo e($sosmed->instagram); ?>" target="_blank" class="social-icon instagram btn-lg-square">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="https://www.tiktok.com/@bkkpontianak?is_from_webapp=1&sender_device=pc" target="_blank"
+        <a href="<?php echo e($sosmed->tiktok); ?>" target="_blank"
             class="social-icon tiktok btn-lg-square">
             <i class="fab fa-tiktok"></i>
         </a>
-        <a href="https://www.youtube.com/channel/UCXBSuR2BWc9FQ0xRa8G-1rQ/featured" target="_blank"
+        <a href="<?php echo e($sosmed->yt); ?>" target="_blank"
             class="social-icon youtube btn-lg-square">
             <i class="fab fa-youtube"></i>
         </a>
-        <a href="https://api.whatsapp.com/message/4ZTOZITFRHX5G1?autoload=1&app_absent=0" target="_blank"
+        <a href="<?php echo e($sosmed->wa); ?>" target="_blank"
             class="social-icon whatsapp btn-lg-square">
             <i class="fab fa-whatsapp"></i>
         </a>
