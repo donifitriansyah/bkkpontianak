@@ -42,8 +42,7 @@
 
     <!-- Ikon Media Sosial yang akan terbang dari sebelah kanan -->
     <div class="social-media-icons">
-        <a href="{{ $sosmed->fb }}" target="_blank"
-            class="social-icon facebook btn-lg-square">
+        <a href="{{ $sosmed->fb }}" target="_blank" class="social-icon facebook btn-lg-square">
             <i class="fab fa-facebook-f"></i>
         </a>
         <a href="{{ $sosmed->twitter }}" target="_blank" class="social-icon twitter btn-lg-square">
@@ -52,16 +51,13 @@
         <a href="{{ $sosmed->instagram }}" target="_blank" class="social-icon instagram btn-lg-square">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="{{ $sosmed->tiktok }}" target="_blank"
-            class="social-icon tiktok btn-lg-square">
+        <a href="{{ $sosmed->tiktok }}" target="_blank" class="social-icon tiktok btn-lg-square">
             <i class="fab fa-tiktok"></i>
         </a>
-        <a href="{{ $sosmed->yt }}" target="_blank"
-            class="social-icon youtube btn-lg-square">
+        <a href="{{ $sosmed->yt }}" target="_blank" class="social-icon youtube btn-lg-square">
             <i class="fab fa-youtube"></i>
         </a>
-        <a href="{{ $sosmed->wa }}" target="_blank"
-            class="social-icon whatsapp btn-lg-square">
+        <a href="{{ $sosmed->wa }}" target="_blank" class="social-icon whatsapp btn-lg-square">
             <i class="fab fa-whatsapp"></i>
         </a>
     </div>
@@ -91,7 +87,7 @@
     </div>
 
     <!-- Footer Start -->
-    @include('includes.frontend.footer', ['footer' => $footer, 'sosmed' => $sosmed ])
+    @include('includes.frontend.footer', ['footer' => $footer, 'sosmed' => $sosmed])
     <!-- Footer End -->
 
     <!-- Back to Top -->
@@ -115,6 +111,31 @@
             $('#announcementModal').modal('show');
         });
     </script>
+
+
+    <script>
+        (function(w, d, s, u, o) {
+            w._cyA11yConfig = {
+                "iconId": "default",
+                "position": {
+                    "mobile": "bottom-left",
+                    "desktop": "bottom-left"
+                },
+                "language": {
+                    "default": "id",
+                    "selected": []
+                }
+            };
+            var js = d.createElement(s),
+                fjs = d.getElementsByTagName(s)[0];
+            js.src = u;
+            js.async = true;
+            fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, "script",
+            "https://cdn-cookieyes.com/widgets/accessibility.js?id=36f0a873-5bf8-489e-be57-93c20d7c392c");
+    </script>
+
+
 
 </body>
 
