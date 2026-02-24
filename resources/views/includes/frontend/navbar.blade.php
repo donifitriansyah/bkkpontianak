@@ -1,3 +1,28 @@
+<style>
+    /* Default (Desktop) */
+.navbar-logo {
+    height: 50px !important;
+    width: auto;
+    margin-right: 10px;
+}
+
+.navbar-title {
+    font-size: 22px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar-logo {
+        height: 30px !important;
+    }
+
+    .navbar-title {
+        font-size: 15px;
+    }
+
+}
+</style>
 <div class="container-fluid position-relative p-0">
     <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
         <a href="index.html" class="navbar-brand d-flex align-items-center p-0">

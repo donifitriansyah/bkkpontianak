@@ -1400,26 +1400,4 @@ h6,
     }
 }
 
-/* Default (Desktop) */
-.navbar-logo {
-    height: 50px !important;
-    width: auto;
-    margin-right: 10px;
-}
 
-.navbar-title {
-    font-size: 22px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    .navbar-logo {
-        height: 30px !important;
-    }
-
-    .navbar-title {
-        font-size: 15px;
-    }
-
-}
